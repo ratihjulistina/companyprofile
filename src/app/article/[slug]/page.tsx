@@ -12,6 +12,7 @@ import { rubik } from "@/static/Font";
 export default function Article() {
   //fitur next bisa langsung akses slug dari params
   const params = useParams<{ slug: string }>();
+  /* eslint-disable  @typescript-eslint/no-explicit-any */
   const [article, setArticle] = useState<any>();
 
   const fetchArticles = async () => {
