@@ -24,13 +24,13 @@ export default function Article() {
 
       setArticle(data.items[0].fields);
     } catch (err) {
-      console.log;
+      console.log(err);
     }
   };
 
   useEffect(() => {
     fetchArticles();
-  }, []);
+  }, [article]);
 
   return (
     <div>
