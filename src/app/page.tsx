@@ -8,7 +8,7 @@ import { useGlobal } from "@/hooks/global.customhooks";
 import Modal from "@/components/layout/Modal";
 import KeyServices from "@/components/layout/KeyServices";
 import About from "@/components/layout/About";
-import { Catagories, Services } from "@/components/layout/Services";
+import { Services } from "@/components/layout/Services";
 
 export default function Home() {
   const {
