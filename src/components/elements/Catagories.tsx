@@ -29,7 +29,7 @@ export function Catagories({ filterKey }: { filterKey: string }) {
   );
 
   return (
-    <div className="w-[100%] mx-auto bg-[rgb(109,26,41)] opacity-0.4 min-h-max py-10">
+    <div className="w-[100%] mx-auto  opacity-0.4 min-h-max py-10">
       <div
         className={`${rubik.variable} font-sans text-4xl text-black pt-10 text-center py-10 font-bold `}
       >
