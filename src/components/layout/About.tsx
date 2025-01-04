@@ -5,21 +5,21 @@ import React from "react";
 
 function About() {
   return (
-    <div id="About Us" className="w-full bg-[rgb(109,26,41)]">
-      <div className="w-[87.4%] min-h-max m-auto py-5">
+    <div id="About Us" className="w-full bg-[rgb(109,26,41)] min-h-sreen py-5">
+      <div className="w-[87.4%] min-h-max m-auto mb-16">
         <h1
-          className={`${rubik.variable} font-sans text-3xl font-bold italic tracking-widest text-white py-10`}
+          className={`${rubik.variable} font-sans text-5xl font-bold italic tracking-widest text-white py-10`}
         >
           About Us
         </h1>
         <div className="flex flex-row justify-between gap-5">
-          <div className="w-[50%] bg-black">
+          <div className="w-[50%]">
             <Image
               src={"/hero.jpg"}
               alt="Aboutimage"
               width={800}
               height={800}
-              className="object-cover"
+              className="object-cover rounded-md border-orange-800"
             />
           </div>
           <div

@@ -3,7 +3,7 @@ import React from "react";
 
 function KeyServices() {
   return (
-    <div className="w-full bg-[rgb(217,8,45)] opacity-80 ">
+    <div className="w-full bg-[rgb(167,37,61)] opacity-80 ">
       <div className="w-[87.4%] min-h-max m-auto py-10 opacity-100">
         <h1
           className={`${rubik.variable} font-sans text-3xl font-bold italic tracking-widest text-black`}

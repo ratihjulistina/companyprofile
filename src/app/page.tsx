@@ -9,6 +9,9 @@ import Modal from "@/components/layout/Modal";
 import KeyServices from "@/components/layout/KeyServices";
 import About from "@/components/layout/About";
 import { Services } from "@/components/layout/Services";
+import ContactBtn from "@/components/elements/ContactBtn";
+import Footer from "@/components/layout/Footer";
+import Contact from "@/components/layout/Contact";
 
 export default function Home() {
   const {
@@ -36,6 +39,8 @@ export default function Home() {
       <KeyServices />
       <About />
       <Services />
+      <Contact />
+      <Footer />
     </GlobalStateContext.Provider>
   );
 }

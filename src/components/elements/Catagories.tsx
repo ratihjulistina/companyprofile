@@ -29,9 +29,9 @@ export function Catagories({ filterKey }: { filterKey: string }) {
   );
 
   return (
-    <div className="w-[87.4%] mx-auto bg-[rgb(109,26,41)] opacity-0.4 min-h-max ">
+    <div className="w-[100%] mx-auto bg-[rgb(109,26,41)] opacity-0.4 min-h-max py-10">
       <div
-        className={`${rubik.variable} font-sans text-4xl text-black pt-10 text-center py-5 font-bold `}
+        className={`${rubik.variable} font-sans text-4xl text-black pt-10 text-center py-10 font-bold `}
       >
         {filterKey}
       </div>
@@ -40,7 +40,7 @@ export function Catagories({ filterKey }: { filterKey: string }) {
           filteredData
             .filter((post) => post.fields.catagory === filterKey)
             .map((blog, idx) => (
-              <div key={idx} className=" drop-shadow-2xl h-[70vh] max-w-sm  ">
+              <div key={idx} className=" drop-shadow-2xl h-[500px] max-w-sm  ">
                 <Link className=" " href={`article/${blog.fields.slug}`}>
                   <div className="h-[60%] w-full rounded-t-lg shadow-xl">
                     {" "}
@@ -55,7 +55,7 @@ export function Catagories({ filterKey }: { filterKey: string }) {
                     />
                   </div>
 
-                  <div className=" w-[100%] h-[40%] px-2 flex flex-col justify-between m-auto pb-3 shadow-xl border-b-1 rounded-b-lg bg-white ">
+                  <div className=" w-[100%] h-[40%] px-2 flex flex-col justify-between items-center m-auto pb-3 shadow-xl border-b-1 rounded-b-lg bg-white ">
                     <div
                       className={`${rubik.variable} font-sans text-2xl tracking-tigh font-extrabold mb-2 pt-3 h-[30%]`}
                     >

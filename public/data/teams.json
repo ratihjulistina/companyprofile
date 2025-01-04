@@ -1,0 +1,29 @@
+{
+  "teams": [
+    {
+      "id": "1",
+      "image": "",
+      "name": "John Camaron",
+      "position": "Founder"
+    },
+    {
+      "id": "2",
+      "image": "",
+      "name": "Ramona Elenois",
+      "position": "CEO"
+    },
+
+    {
+      "id": "3",
+      "image": "",
+      "name": "Rangko Mali",
+      "position": "Technical Direktor"
+    },
+    {
+      "id": "4",
+      "image": "",
+      "name": "Niana",
+      "position": "Manager"
+    }
+  ]
+}

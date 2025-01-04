@@ -45,7 +45,7 @@ function Navbar() {
           <MenuItem title="Services" />
         </div>
         <div className=" hover:text-[rgb(217,8,45)] transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover: duration-300 ...">
-          <MenuItem title="Teams" />
+          <Link href={"/teams/"}>Teams</Link>
         </div>
       </div>
       {/* <BurgerMenu /> */}
