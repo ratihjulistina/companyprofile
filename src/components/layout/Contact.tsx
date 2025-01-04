@@ -1,5 +1,4 @@
 import React from "react";
-import ContactBtn from "@/components/elements/ContactBtn";
 
 function Contact() {
   return (
