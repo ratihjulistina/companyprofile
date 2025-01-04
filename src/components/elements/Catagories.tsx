@@ -7,7 +7,7 @@ import {
   TypeProductsSkeleton,
 } from "@/contentful/types/products.types";
 import { rubik } from "@/static/Font";
-import { Entry, EntryCollection } from "contentful";
+import { Entry } from "contentful";
 
 export function Catagories({ filterKey }: { filterKey: string }) {
   const [posts, setPosts] = useState<
@@ -21,7 +21,7 @@ export function Catagories({ filterKey }: { filterKey: string }) {
       setPosts(data?.items); // Set the fetched posts
     }
     fetchData();
-  }, []); // Empty dependency array ensures it runs only once after initial render
+  }, [posts]); // Empty dependency array ensures it runs only once after initial render
 
   const contentType = "products";
   const filteredData = posts?.filter(
