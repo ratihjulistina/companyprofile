@@ -13,7 +13,7 @@ function Navbar() {
   return (
     <div
       id="Navbar"
-      className={`sticky -mt-14 top-0 z-50 flex flex-row justify-around items-center ${
+      className={`sticky -mt-14 top-0 z-50 flex flex-row justify-around items-center h-16 backdrop-blur ${
         isAtTop2
           ? "opacity-100"
           : "opacity-0 hover:opacity-100 transition-opacity duration-500"
@@ -21,15 +21,15 @@ function Navbar() {
       //bg-gradient-to-r from-transparent to-black text-white
     >
       <Link
-        className="h-[100%] transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover: duration-300 ..."
-        href="/#Hero"
+        className="h-[50%] transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover: duration-300 ..."
+        href="/#"
       >
         <Image
           className="object-cover h-[100%]"
           src="/logo.png"
           alt="logo"
-          width={80}
-          height={80}
+          width={40}
+          height={40}
         />
       </Link>
       <div

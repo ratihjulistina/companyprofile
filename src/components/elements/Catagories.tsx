@@ -1,15 +1,33 @@
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { getProductsContentful } from "./Request";
 import Image from "next/image";
-import { IContentfulAsset } from "@/contentful/types/products.types";
+import {
+  IContentfulAsset,
+  TypeProductsSkeleton,
+} from "@/contentful/types/products.types";
 import { rubik } from "@/static/Font";
+import { Entry, EntryCollection } from "contentful";
 
-export async function Catagories({ filterKey }: { filterKey: string }) {
-  const posts = await getProductsContentful();
+export function Catagories({ filterKey }: { filterKey: string }) {
+  const [posts, setPosts] = useState<
+    Entry<TypeProductsSkeleton, undefined, string>[] | undefined
+  >(undefined); // State to store the fetched data
+
+  useEffect(() => {
+    // Fetch data when the component mounts
+    async function fetchData() {
+      const data = await getProductsContentful();
+      setPosts(data?.items); // Set the fetched posts
+    }
+    fetchData();
+  }, []); // Empty dependency array ensures it runs only once after initial render
+
   const contentType = "products";
-  const filteredData = posts?.items.filter(
+  const filteredData = posts?.filter(
     (post) => post.sys.contentType.sys.id === contentType
   );
+
   return (
     <div className="w-[87.4%] mx-auto bg-[rgb(109,26,41)] opacity-0.4 min-h-max ">
       <div

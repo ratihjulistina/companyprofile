@@ -5,8 +5,8 @@ import React from "react";
 
 function About() {
   return (
-    <div className="w-full bg-[rgb(109,26,41)]">
-      <div className="w-[87.4%] min-h-max m-auto">
+    <div id="About Us" className="w-full bg-[rgb(109,26,41)]">
+      <div className="w-[87.4%] min-h-max m-auto py-5">
         <h1
           className={`${rubik.variable} font-sans text-3xl font-bold italic tracking-widest text-white py-10`}
         >
